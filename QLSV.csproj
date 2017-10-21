@@ -138,15 +138,10 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="App_data\QLSinhVien.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_data\QLSinhVien_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>QLSinhVien.mdf</DependentUpon>
-    </Content>
+    <Folder Include="App_data\" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\SABWm9.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

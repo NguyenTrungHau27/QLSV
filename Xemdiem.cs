@@ -35,67 +35,14 @@ namespace QLSV
             SqlCommand cmd3 = new SqlCommand(sqlKhoa, DangNhap.cn);
             cmd3.CommandType = CommandType.Text;
             txtKhoa.Text = Convert.ToString(cmd3.ExecuteScalar());
-            ///
-            string sql= "SELECT * FROM SinhVien WHERE MaSinhVien ='" + txtMSSV.Text+"'";
-            SqlCommand cmd4 = new SqlCommand(sql, DangNhap.cn);
-            cmd4.CommandType = CommandType.Text;
-            dlgXemdiem.DataSource = GetData();
+
+            DataTable table = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(@"select MonHoc.TenMH as N'Tên môn học', Thi.DiemThiGK as N'Điểm thi giữa kỳ', Thi.DiemThiCK as N'Điểm thi cuối kỳ' 
+                                                      from Lop, MonHoc, Thi 
+                                                      where MonHoc.MaMH = Lop.MaMH and Lop.MaLop = Thi.MaLop and Thi.MaSinhVien = '" + DangNhap.mssv + "'", DangNhap.cn);
+            da.Fill(table);
+            dlgXemdiem.DataSource = table;
+            
         }
-        private List<object> GetData()
-        {
-            //DangNhap.cn.Open();
-
-            string sql = "SELECT * FROM Thi WHERE MaSinhVien ='" + DangNhap.mssv + "'";
-
-            List<object> list = new List<object>();
-            try
-            {
-                SqlCommand cmd = new SqlCommand(sql, DangNhap.cn);
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                string maLop , maSinhVien, phongThi , caThi;
-                double diemthiGK;
-                double diemthiCK;
-               // int c = Convert.ToInt32("diemthiCK");
-                int lanthi;
-                DateTime ngayThi;
-                while (dr.Read())
-                {
-                    maLop = dr.GetString(0);
-                    maSinhVien = dr.GetString(1);
-                    lanthi = dr.GetInt32(2);
-                   ngayThi = dr.GetDateTime(3);
-                    phongThi = dr.GetString(4);
-                    caThi = dr.GetString(5);
-                    diemthiGK = dr.GetDouble(6);
-                    diemthiCK = dr.GetDouble(7);
-                    // ...
-
-                    var prod = new
-                    {
-                        MaLop = maLop,
-                        MSSV = maSinhVien,
-                        LanThi = lanthi,
-                       NgayThi = ngayThi,
-                        PhongThi=phongThi,
-                        Ca=caThi,
-                       DiemThiGK=diemthiGK,
-                       DiemThiCK=diemthiCK,
-                    };
-                    list.Add(prod);
-                }
-                dr.Close();
-            }
-            catch (SqlException ex) // Internet => Exception
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                DangNhap.cn.Close();
-            }
-            return list;
-        }
-
     }
 }
