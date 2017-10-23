@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\master\bin\Debug\QLSV.exe.config
+C:\Users\Admin\Desktop\master\bin\Debug\QLSV.exe
+C:\Users\Admin\Desktop\master\bin\Debug\QLSV.pdb
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.ChucNang.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.DangNhap.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.DKMH.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.Properties.Resources.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.Welcome.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.Xemdiem.resources
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.exe
+C:\Users\Admin\Desktop\master\obj\Debug\QLSV.pdb
+C:\Users\Admin\Desktop\master\bin\Debug\App_Data\QLSinhVien.mdf
+C:\Users\Admin\Desktop\master\bin\Debug\App_Data\QLSinhVien_log.ldf

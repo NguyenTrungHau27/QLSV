@@ -27,11 +27,11 @@ namespace QLSV
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //string path = Directory.GetCurrentDirectory();
-            //path = path.Substring(0, path.LastIndexOf('\\') - 3);
-            //cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + @"App_data\QLSinhVien.mdf;Integrated Security=True;Connect Timeout=30");
-            string cnStr = ConfigurationManager.ConnectionStrings["ketnoi"].ConnectionString;
-            cn = new SqlConnection(cnStr);
+            string path = Directory.GetCurrentDirectory();
+            path = path.Substring(0, path.LastIndexOf('\\') - 3);
+            cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + @"App_data\QLSinhVien.mdf;Integrated Security=True;Connect Timeout=30");
+            //string cnStr = ConfigurationManager.ConnectionStrings["ketnoi"].ConnectionString;
+            //cn = new SqlConnection(cnStr);
         }
 
         private void btDong_Click(object sender, EventArgs e)
