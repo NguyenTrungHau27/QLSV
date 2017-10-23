@@ -11,3 +11,6 @@ C:\Users\Admin\Desktop\master\obj\Debug\QLSV.Xemdiem.resources
 C:\Users\Admin\Desktop\master\obj\Debug\QLSV.csproj.GenerateResource.Cache
 C:\Users\Admin\Desktop\master\obj\Debug\QLSV.exe
 C:\Users\Admin\Desktop\master\obj\Debug\QLSV.pdb
+C:\Users\Admin\Desktop\QLSV\bin\Debug\QLSV.exe.config
+C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.exe
+C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.pdb
