@@ -53,7 +53,6 @@ namespace QLSV
             mssv = (string)cmd.ExecuteScalar();
             if (mssv != null)
             {
-                MessageBox.Show("Đăng nhập thành công");
                 ChucNang dvsv = new ChucNang();
                 dvsv.Show();
             }

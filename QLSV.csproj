@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -36,6 +37,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -92,6 +95,12 @@
     <Compile Include="Xemdiem.Designer.cs">
       <DependentUpon>Xemdiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemLichThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemLichThi.Designer.cs">
+      <DependentUpon>XemLichThi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ChucNang.resx">
       <DependentUpon>ChucNang.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +126,10 @@
     <EmbeddedResource Include="Xemdiem.resx">
       <DependentUpon>Xemdiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="XemLichThi.resx">
+      <DependentUpon>XemLichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -147,11 +160,18 @@
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\SABWm9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_data\QLSinhVien.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_data\QLSinhVien_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QLSinhVien.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

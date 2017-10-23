@@ -235,6 +235,7 @@
             this.btXemLichThi.TabIndex = 2;
             this.btXemLichThi.Text = "Xem lịch thi";
             this.btXemLichThi.UseVisualStyleBackColor = true;
+            this.btXemLichThi.Click += new System.EventHandler(this.btXemLichThi_Click);
             // 
             // ChucNang
             // 

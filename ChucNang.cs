@@ -82,5 +82,11 @@ namespace QLSV
             ThoiKhoaBieu tkb = new ThoiKhoaBieu();
             tkb.Show();
         }
+
+        private void btXemLichThi_Click(object sender, EventArgs e)
+        {
+            XemLichThi lt = new XemLichThi();
+            lt.Show();
+        }
     }
 }
