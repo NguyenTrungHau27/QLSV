@@ -49,9 +49,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.picSinhVien);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 26);
+            this.groupBox2.Location = new System.Drawing.Point(3, 26);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(198, 193);
+            this.groupBox2.Size = new System.Drawing.Size(226, 193);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sinh viên";
@@ -77,9 +77,10 @@
             // lbHoTen
             // 
             this.lbHoTen.AutoSize = true;
-            this.lbHoTen.Location = new System.Drawing.Point(65, 122);
+            this.lbHoTen.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbHoTen.Location = new System.Drawing.Point(65, 126);
             this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(45, 19);
+            this.lbHoTen.Size = new System.Drawing.Size(38, 15);
             this.lbHoTen.TabIndex = 2;
             this.lbHoTen.Text = "label3";
             // 
@@ -107,16 +108,16 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(396, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 24);
+            this.label1.Size = new System.Drawing.Size(136, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lịch thi học kì";
             // 
             // dataGvLichThi
             // 
             this.dataGvLichThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGvLichThi.Location = new System.Drawing.Point(244, 70);
+            this.dataGvLichThi.Location = new System.Drawing.Point(235, 70);
             this.dataGvLichThi.Name = "dataGvLichThi";
-            this.dataGvLichThi.Size = new System.Drawing.Size(471, 233);
+            this.dataGvLichThi.Size = new System.Drawing.Size(489, 233);
             this.dataGvLichThi.TabIndex = 4;
             // 
             // XemLichThi

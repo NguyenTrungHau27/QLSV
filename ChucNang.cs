@@ -21,6 +21,7 @@ namespace QLSV
         {
             if (MessageBox.Show("Bạn muốn thoát chương trình ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                 e.Cancel = true;
+            
         }
 
         private void ChucNang_Load(object sender, EventArgs e)
