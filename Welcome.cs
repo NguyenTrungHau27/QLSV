@@ -23,6 +23,9 @@ namespace QLSV
                 Close();
         }
 
-   
+        private void Welcome_Load(object sender, EventArgs e)
+        {
+            picOU.Image = Image.FromFile(Application.StartupPath + @"\Images\cntt.png");
+        }
     }
 }
