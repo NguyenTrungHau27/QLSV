@@ -81,5 +81,17 @@ namespace QLSV
             DKMH dk = new DKMH();
             dk.Show();
         }
+
+        private void btXemTKB_Click(object sender, EventArgs e)
+        {
+            ThoiKhoaBieu tkb = new ThoiKhoaBieu();
+            tkb.Show();
+        }
+
+        private void btXemLichThi_Click(object sender, EventArgs e)
+        {
+            XemLichThi lt = new XemLichThi();
+            lt.Show();
+        }
     }
 }

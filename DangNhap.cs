@@ -30,8 +30,6 @@ namespace QLSV
             string path = Directory.GetCurrentDirectory();
             path = path.Substring(0, path.LastIndexOf('\\') - 3);
             cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + @"App_data\QLSinhVien.mdf;Integrated Security=True;Connect Timeout=30");
-            //string cnStr = ConfigurationManager.ConnectionStrings["ketnoi"].ConnectionString;
-            //cn = new SqlConnection(cnStr);
         }
 
         private void btDong_Click(object sender, EventArgs e)
@@ -47,21 +45,49 @@ namespace QLSV
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-            
-            cn.Open();
+
+            Connect();
             string sql = "SELECT ID FROM TaiKhoan WHERE ID = '" + txtMSSV.Text + "' and Pass = '" + txtMatKhau.Text + "'";
             SqlCommand cmd = new SqlCommand(sql, cn);
             cmd.CommandType = CommandType.Text;
             mssv = (string)cmd.ExecuteScalar();
             if (mssv != null)
             {
-                MessageBox.Show("Đăng nhập thành công");
                 ChucNang dvsv = new ChucNang();
                 dvsv.Show();
             }
             else
                 MessageBox.Show("Đăng nhập thất bại");
-            cn.Close();
+            disConnect();
+        }
+        public void Connect()
+        {
+            try
+            {
+                if (DangNhap.cn != null && DangNhap.cn.State == ConnectionState.Closed)
+                {
+                    DangNhap.cn.Open();
+                }
+                else
+                    MessageBox.Show("Server hiện đã được kết nối!");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Lỗi kết nối \n\n" + ex.Message);
+            }
+            catch (ConfigurationErrorsException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void disConnect()
+        {
+            if (DangNhap.cn != null && DangNhap.cn.State == ConnectionState.Open)
+                DangNhap.cn.Close();
         }
     }
 }

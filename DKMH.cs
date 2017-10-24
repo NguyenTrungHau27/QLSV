@@ -40,22 +40,7 @@ namespace QLSV
         private void getAvatar()
         {
             string path = Application.StartupPath + @"\Images\";
-            if (txtMSSV.Text == "1551010024")
-            {
-                picAvatar.Image = Image.FromFile(path + "dat.jpg");
-            }
-            if (txtMSSV.Text == "1551010046")
-            {
-                picAvatar.Image = Image.FromFile(path + "hung.jpg");
-            }
-            if (txtMSSV.Text == "1551010037")
-            {
-                picAvatar.Image = Image.FromFile(path + "hoang.jpg");
-            }
-            if (txtMSSV.Text == "1551010032")
-            {
-                picAvatar.Image = Image.FromFile(path + "hau.jpg");
-            }
+            picAvatar.Image = Image.FromFile(path + DangNhap.mssv.ToString() + ".jpg");
         }
         //Hàm kết nối
         public void Connect()

@@ -214,6 +214,7 @@
             this.btXemTKB.TabIndex = 2;
             this.btXemTKB.Text = "Xem thời khóa biểu";
             this.btXemTKB.UseVisualStyleBackColor = true;
+            this.btXemTKB.Click += new System.EventHandler(this.btXemTKB_Click);
             // 
             // btXemDiem
             // 
@@ -235,6 +236,7 @@
             this.btXemLichThi.TabIndex = 2;
             this.btXemLichThi.Text = "Xem lịch thi";
             this.btXemLichThi.UseVisualStyleBackColor = true;
+            this.btXemLichThi.Click += new System.EventHandler(this.btXemLichThi_Click);
             // 
             // ChucNang
             // 
