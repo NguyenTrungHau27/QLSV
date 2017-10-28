@@ -45,12 +45,9 @@ namespace QLSV
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
-
             Connect();
-            string sql = "SELECT ID FROM TaiKhoan WHERE ID = '" + txtMSSV.Text + "' and Pass = '" + txtMatKhau.Text + "'";
-            SqlCommand cmd = new SqlCommand(sql, cn);
-            cmd.CommandType = CommandType.Text;
-            mssv = (string)cmd.ExecuteScalar();
+            DangNhapTK dangnhap = new DangNhapTK(txtMSSV.Text,txtMatKhau.Text);
+            mssv = dangnhap.Dangnhap();
             if (mssv != null)
             {
                 ChucNang dvsv = new ChucNang();
@@ -60,6 +57,8 @@ namespace QLSV
                 MessageBox.Show("Đăng nhập thất bại");
             disConnect();
         }
+
+
         public void Connect()
         {
             try
