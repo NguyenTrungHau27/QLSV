@@ -20,10 +20,7 @@ namespace QLSV
         }
         public static SqlConnection cn = null;
         public static string mssv = null;
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string getStr = txtMSSV.Text;
-        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -47,8 +44,7 @@ namespace QLSV
         {
             Connect();
             DangNhapTK dangnhap = new DangNhapTK(txtMSSV.Text,txtMatKhau.Text);
-            mssv = dangnhap.Dangnhap();
-            if (mssv != null)
+            if (dangnhap.KTDangnhap())
             {
                 ChucNang dvsv = new ChucNang();
                 dvsv.Show();
@@ -88,5 +84,7 @@ namespace QLSV
             if (DangNhap.cn != null && DangNhap.cn.State == ConnectionState.Open)
                 DangNhap.cn.Close();
         }
+
+
     }
 }

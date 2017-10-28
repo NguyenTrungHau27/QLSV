@@ -46,7 +46,6 @@
             this.txtMSSV.Size = new System.Drawing.Size(140, 23);
             this.txtMSSV.TabIndex = 0;
             this.txtMSSV.Text = "1551010046";
-            this.txtMSSV.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -78,7 +77,6 @@
             this.txtMatKhau.Size = new System.Drawing.Size(140, 23);
             this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.Text = "123456";
-            this.txtMatKhau.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -113,6 +111,7 @@
             // 
             // DangNhap
             // 
+            this.AcceptButton = this.btDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(260, 183);

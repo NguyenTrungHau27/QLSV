@@ -18,9 +18,7 @@ namespace QLSV
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Welcome.ActiveForm.Opacity -= 1;
-            if (Welcome.ActiveForm.Opacity == 0)
-                Close();
+                  Close();
         }
 
    

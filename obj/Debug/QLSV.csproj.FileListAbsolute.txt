@@ -14,7 +14,6 @@ C:\Users\Admin\Desktop\master\obj\Debug\QLSV.pdb
 C:\Users\Admin\Desktop\QLSV\bin\Debug\QLSV.exe.config
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.exe
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.pdb
-C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.ChucNang.resources
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.DangNhap.resources
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.DKMH.resources
