@@ -27,3 +27,4 @@ C:\Users\Admin\Desktop\master\obj\Debug\QLSV.ThoiKhoaBieu.resources
 C:\Users\Admin\Desktop\master\obj\Debug\QLSV.XemLichThi.resources
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.ThoiKhoaBieu.resources
 C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.XemLichThi.resources
+C:\Users\Admin\Desktop\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache

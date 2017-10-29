@@ -18,7 +18,6 @@ namespace QLSV
         }
         public bool KTDangnhap()
         {
-            DangNhap.cn.Open();
             string sql = "SELECT ID FROM TaiKhoan WHERE ID = @User and Pass = @Pass";
             SqlCommand cmd = new SqlCommand(sql, DangNhap.cn);
             cmd.CommandType = CommandType.Text;
