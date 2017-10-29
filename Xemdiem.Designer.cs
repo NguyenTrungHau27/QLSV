@@ -28,29 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dlgXemdiem = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtHoten = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtMSSV = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbMSSV = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtKhoa = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.lbHoTen = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.picSinhVien = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dlgXemdiem)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSinhVien)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.dlgXemdiem);
-            this.panel1.Location = new System.Drawing.Point(-1, 176);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(826, 156);
-            this.panel1.TabIndex = 2;
             // 
             // dlgXemdiem
             // 
@@ -59,116 +47,102 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dlgXemdiem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dlgXemdiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dlgXemdiem.Location = new System.Drawing.Point(0, 3);
+            this.dlgXemdiem.Location = new System.Drawing.Point(278, 12);
             this.dlgXemdiem.Name = "dlgXemdiem";
-            this.dlgXemdiem.Size = new System.Drawing.Size(826, 153);
+            this.dlgXemdiem.Size = new System.Drawing.Size(536, 193);
             this.dlgXemdiem.TabIndex = 0;
             // 
-            // label1
+            // groupBox2
             // 
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Họ tên";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox2.Controls.Add(this.lbMSSV);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.lbHoTen);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.picSinhVien);
+            this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(232, 193);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin sinh viên";
             // 
-            // txtHoten
+            // lbMSSV
             // 
-            this.txtHoten.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHoten.Location = new System.Drawing.Point(121, 16);
-            this.txtHoten.Name = "txtHoten";
-            this.txtHoten.Size = new System.Drawing.Size(411, 20);
-            this.txtHoten.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(3, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "MSSV";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtMSSV
-            // 
-            this.txtMSSV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMSSV.Location = new System.Drawing.Point(121, 56);
-            this.txtMSSV.Name = "txtMSSV";
-            this.txtMSSV.Size = new System.Drawing.Size(411, 20);
-            this.txtMSSV.TabIndex = 4;
+            this.lbMSSV.AutoSize = true;
+            this.lbMSSV.Location = new System.Drawing.Point(66, 153);
+            this.lbMSSV.Name = "lbMSSV";
+            this.lbMSSV.Size = new System.Drawing.Size(45, 19);
+            this.lbMSSV.TabIndex = 2;
+            this.lbMSSV.Text = "label3";
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(3, 91);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Khoa";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Size = new System.Drawing.Size(54, 19);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "MSSV:";
             // 
-            // txtKhoa
+            // lbHoTen
             // 
-            this.txtKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKhoa.Location = new System.Drawing.Point(121, 94);
-            this.txtKhoa.Name = "txtKhoa";
-            this.txtKhoa.Size = new System.Drawing.Size(411, 20);
-            this.txtKhoa.TabIndex = 4;
+            this.lbHoTen.AutoSize = true;
+            this.lbHoTen.Location = new System.Drawing.Point(65, 122);
+            this.lbHoTen.Name = "lbHoTen";
+            this.lbHoTen.Size = new System.Drawing.Size(45, 19);
+            this.lbHoTen.TabIndex = 2;
+            this.lbHoTen.Text = "label3";
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Yellow;
-            this.panel2.Controls.Add(this.txtHoten);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.txtKhoa);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtMSSV);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(802, 142);
-            this.panel2.TabIndex = 5;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Họ tên:";
+            // 
+            // picSinhVien
+            // 
+            this.picSinhVien.Location = new System.Drawing.Point(39, 25);
+            this.picSinhVien.Name = "picSinhVien";
+            this.picSinhVien.Size = new System.Drawing.Size(120, 94);
+            this.picSinhVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSinhVien.TabIndex = 0;
+            this.picSinhVien.TabStop = false;
             // 
             // Xemdiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(826, 338);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(826, 221);
+            this.Controls.Add(this.dlgXemdiem);
+            this.Controls.Add(this.groupBox2);
             this.MaximizeBox = false;
             this.Name = "Xemdiem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Xemdiem";
+            this.Text = "Xem điểm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Xemdiem_FormClosed);
             this.Load += new System.EventHandler(this.Xemdiem_Load);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dlgXemdiem)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSinhVien)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dlgXemdiem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtHoten;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMSSV;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label lbMSSV;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtKhoa;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbHoTen;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picSinhVien;
     }
 }
