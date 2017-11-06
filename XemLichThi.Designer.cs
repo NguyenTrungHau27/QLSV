@@ -51,7 +51,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(12, 26);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(198, 193);
+            this.groupBox2.Size = new System.Drawing.Size(209, 231);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sinh viên";
@@ -59,7 +59,7 @@
             // lbMSSV
             // 
             this.lbMSSV.AutoSize = true;
-            this.lbMSSV.Location = new System.Drawing.Point(66, 153);
+            this.lbMSSV.Location = new System.Drawing.Point(67, 209);
             this.lbMSSV.Name = "lbMSSV";
             this.lbMSSV.Size = new System.Drawing.Size(45, 19);
             this.lbMSSV.TabIndex = 2;
@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 153);
+            this.label3.Location = new System.Drawing.Point(7, 209);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 19);
             this.label3.TabIndex = 1;
@@ -77,7 +77,7 @@
             // lbHoTen
             // 
             this.lbHoTen.AutoSize = true;
-            this.lbHoTen.Location = new System.Drawing.Point(65, 122);
+            this.lbHoTen.Location = new System.Drawing.Point(66, 178);
             this.lbHoTen.Name = "lbHoTen";
             this.lbHoTen.Size = new System.Drawing.Size(45, 19);
             this.lbHoTen.TabIndex = 2;
@@ -86,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 122);
+            this.label2.Location = new System.Drawing.Point(7, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 19);
             this.label2.TabIndex = 1;
@@ -94,9 +94,9 @@
             // 
             // picSinhVien
             // 
-            this.picSinhVien.Location = new System.Drawing.Point(39, 25);
+            this.picSinhVien.Location = new System.Drawing.Point(28, 25);
             this.picSinhVien.Name = "picSinhVien";
-            this.picSinhVien.Size = new System.Drawing.Size(112, 82);
+            this.picSinhVien.Size = new System.Drawing.Size(141, 131);
             this.picSinhVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSinhVien.TabIndex = 0;
             this.picSinhVien.TabStop = false;
@@ -105,18 +105,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(396, 31);
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(394, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 24);
+            this.label1.Size = new System.Drawing.Size(136, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lịch thi học kì";
             // 
             // dataGvLichThi
             // 
             this.dataGvLichThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGvLichThi.Location = new System.Drawing.Point(244, 70);
+            this.dataGvLichThi.Location = new System.Drawing.Point(244, 53);
             this.dataGvLichThi.Name = "dataGvLichThi";
-            this.dataGvLichThi.Size = new System.Drawing.Size(471, 233);
+            this.dataGvLichThi.Size = new System.Drawing.Size(471, 290);
             this.dataGvLichThi.TabIndex = 4;
             // 
             // XemLichThi

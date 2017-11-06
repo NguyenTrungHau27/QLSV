@@ -178,10 +178,10 @@ namespace QLSV
         }
         private void DKMH_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+            //if (MessageBox.Show("Thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            //{
+            //    e.Cancel = true;
+            //}
             DangNhap.cn.Close();
         }
 
