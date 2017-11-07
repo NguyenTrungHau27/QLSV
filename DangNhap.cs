@@ -36,15 +36,15 @@ namespace QLSV
 
         private void DangNhap_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn muốn thoát chương trình ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
-                e.Cancel = true;
+            //if (MessageBox.Show("Bạn muốn thoát chương trình ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            //    e.Cancel = true;
         }
 
         private void btDangNhap_Click(object sender, EventArgs e)
         {
             Connect();
-            DangNhapTK dangnhap = new DangNhapTK(txtMSSV.Text,txtMatKhau.Text);
-            if (dangnhap.KTDangnhap())
+            DangNhapTK dangnhap = new DangNhapTK();
+            if (dangnhap.KTDangnhap(txtMSSV.Text, txtMatKhau.Text))
             {
                 ChucNang dvsv = new ChucNang();
                 dvsv.Show();

@@ -65,5 +65,15 @@ namespace QLSV
             DangNhap.cn.Close();
             return list;
         }
+
+        private void btSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGvLichThi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

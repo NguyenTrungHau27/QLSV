@@ -75,7 +75,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1021, 112);
+            this.groupBox1.Size = new System.Drawing.Size(804, 112);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin môn học";
@@ -168,7 +168,7 @@
             this.txtNameSV.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtNameSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNameSV.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtNameSV.Location = new System.Drawing.Point(107, 288);
+            this.txtNameSV.Location = new System.Drawing.Point(82, 231);
             this.txtNameSV.Name = "txtNameSV";
             this.txtNameSV.ReadOnly = true;
             this.txtNameSV.Size = new System.Drawing.Size(191, 29);
@@ -178,7 +178,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 291);
+            this.label2.Location = new System.Drawing.Point(8, 234);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 24);
             this.label2.TabIndex = 0;
@@ -189,7 +189,7 @@
             this.txtMSSV.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtMSSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMSSV.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtMSSV.Location = new System.Drawing.Point(107, 253);
+            this.txtMSSV.Location = new System.Drawing.Point(82, 196);
             this.txtMSSV.Name = "txtMSSV";
             this.txtMSSV.ReadOnly = true;
             this.txtMSSV.Size = new System.Drawing.Size(191, 29);
@@ -199,7 +199,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 256);
+            this.label1.Location = new System.Drawing.Point(8, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 24);
             this.label1.TabIndex = 0;
@@ -215,7 +215,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 130);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1021, 240);
+            this.groupBox2.Size = new System.Drawing.Size(804, 203);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách môn học";
@@ -224,7 +224,7 @@
             // 
             this.btSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSubmit.Location = new System.Drawing.Point(919, 196);
+            this.btSubmit.Location = new System.Drawing.Point(692, 161);
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(96, 36);
             this.btSubmit.TabIndex = 1;
@@ -248,7 +248,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvDK.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDK.GridColor = System.Drawing.SystemColors.HotTrack;
-            this.dgvDK.Location = new System.Drawing.Point(16, 28);
+            this.dgvDK.Location = new System.Drawing.Point(6, 22);
             this.dgvDK.Name = "dgvDK";
             this.dgvDK.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -261,7 +261,7 @@
             this.dgvDK.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDK.RowHeadersWidth = 35;
             this.dgvDK.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDK.Size = new System.Drawing.Size(999, 162);
+            this.dgvDK.Size = new System.Drawing.Size(782, 133);
             this.dgvDK.TabIndex = 0;
             this.dgvDK.SelectionChanged += new System.EventHandler(this.dgvDK_SelectionChanged);
             // 
@@ -272,9 +272,9 @@
             this.groupBox3.Controls.Add(this.btDelete);
             this.groupBox3.Controls.Add(this.dgvListDK);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(367, 385);
+            this.groupBox3.Location = new System.Drawing.Point(319, 339);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(666, 238);
+            this.groupBox3.Size = new System.Drawing.Size(491, 230);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Môn học đã đăng ký";
@@ -283,7 +283,7 @@
             // 
             this.btDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDelete.Location = new System.Drawing.Point(564, 198);
+            this.btDelete.Location = new System.Drawing.Point(389, 198);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(96, 36);
             this.btDelete.TabIndex = 1;
@@ -302,7 +302,7 @@
             this.dgvListDK.Location = new System.Drawing.Point(6, 28);
             this.dgvListDK.Name = "dgvListDK";
             this.dgvListDK.ReadOnly = true;
-            this.dgvListDK.Size = new System.Drawing.Size(654, 164);
+            this.dgvListDK.Size = new System.Drawing.Size(479, 164);
             this.dgvListDK.TabIndex = 0;
             // 
             // groupBox4
@@ -313,9 +313,9 @@
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.txtMSSV);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(12, 376);
+            this.groupBox4.Location = new System.Drawing.Point(18, 339);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(334, 327);
+            this.groupBox4.Size = new System.Drawing.Size(290, 272);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông tin sinh viên";
@@ -324,7 +324,8 @@
             // 
             this.picAvatar.Location = new System.Drawing.Point(59, 28);
             this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(221, 213);
+            this.picAvatar.Size = new System.Drawing.Size(167, 148);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAvatar.TabIndex = 2;
             this.picAvatar.TabStop = false;
             // 
@@ -334,7 +335,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(1045, 705);
+            this.ClientSize = new System.Drawing.Size(828, 623);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
