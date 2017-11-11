@@ -371,7 +371,7 @@
         private System.Windows.Forms.DataGridView dgvDK;
         private System.Windows.Forms.Button btSubmit;
         private System.Windows.Forms.Button btDelete;
-        private System.Windows.Forms.DataGridView dgvListDK;
+        public System.Windows.Forms.DataGridView dgvListDK;
         private System.Windows.Forms.TextBox txtNameMH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtIDMH;
