@@ -65,3 +65,20 @@ C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.XemLichThi.resources
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.exe
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.pdb
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\bin\Debug\QLSV.exe.config
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.exe
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.pdb
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\bin\Debug\App_Data\QLSinhVien.mdf
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\bin\Debug\App_Data\QLSinhVien_log.ldf
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\bin\Debug\QLSV.exe
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\bin\Debug\QLSV.pdb
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.ChucNang.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.DangNhap.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.DKMH.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.Properties.Resources.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.ThoiKhoaBieu.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.Welcome.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.Xemdiem.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.XemLichThi.resources
+C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
