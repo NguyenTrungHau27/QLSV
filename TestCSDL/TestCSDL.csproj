@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6477A20C-C2CE-449A-88B0-8BD79BD705B3}</ProjectGuid>
+    <ProjectGuid>{6DAFCFE0-EC61-4395-8702-4B3DF8806199}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitTest</RootNamespace>
-    <AssemblyName>UnitTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>TestCSDL</RootNamespace>
+    <AssemblyName>TestCSDL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -51,14 +51,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTestLogin.cs" />
+    <Compile Include="SqlDatabaseSetup.cs" />
+    <Compile Include="TestDangNhap.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="TestXemTKB.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\QLSV.csproj">
-      <Project>{eeb4e70d-5002-4aa8-b506-e5e4ccffeb89}</Project>
-      <Name>QLSV</Name>
-    </ProjectReference>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestDangNhap.resx">
+      <DependentUpon>TestDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestXemTKB.resx">
+      <DependentUpon>TestXemTKB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

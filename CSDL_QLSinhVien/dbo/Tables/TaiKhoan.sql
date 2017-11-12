@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[TaiKhoan] (
+    [ID]   NVARCHAR (10) NOT NULL,
+    [Pass] NVARCHAR (50) NULL,
+    CONSTRAINT [PK_TaiKhoan] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
