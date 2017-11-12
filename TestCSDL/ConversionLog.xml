@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='_ConversionReport_Files/ConversionReport.xslt'?>
+<UpgradeLog>
+  <Properties>
+    <Property Name="Project" Value="TestCSDL" />
+    <Property Name="Project File" Value="C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj" />
+    <Property Name="Date" Value="Sunday, November 12, 2017" />
+    <Property Name="Time" Value="6:15 PM" />
+  </Properties>
+  <Event ErrorLevel="0" Source="" Description="C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj was copied to C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL_20171112111559.csproj for backup." />
+  <Event ErrorLevel="0" Project="C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj" Source="..\TestCSDL.csproj" Description="Project was successfully converted: 'C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj' to 'C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj'" />
+  <Event ErrorLevel="3" Project="C:\Users\ASUS\Desktop\QLSV\TestCSDL\TestCSDL.csproj" Source="..\TestCSDL.csproj" Description="Converted" />
+</UpgradeLog>

@@ -27,7 +27,8 @@ namespace QLSV
 
         private void DKMH_Load(object sender, EventArgs e)
         {
-            DangNhap.cn.Open();
+            //Kết nối
+            Connect();
             //Lấy thông thông tin sinh viên
             GetInfo();
             //Lấy ảnh đại diện của sinh viên
@@ -98,13 +99,11 @@ namespace QLSV
         }
         public void GetInfo()
         {
-            //Connect();
             //Lấy họ và tên của sinh viên
             txtMSSV.Text = DangNhap.mssv;
             string sql = "SELECT [Ho] + ' ' + [Ten] FROM SinhVien WHERE MaSinhVien = '" + txtMSSV.Text + "'";
             cmd = new SqlCommand(sql, DangNhap.cn);
             txtNameSV.Text = cmd.ExecuteScalar().ToString();
-            //disConnect();
         }
 
         private void btSubmit_Click(object sender, EventArgs e)
@@ -112,10 +111,10 @@ namespace QLSV
 
             //Query cho thêm vào bảng "Đăng Ký"
             string dk = "INSERT INTO DangKy(MaLop,MaSinhVien,NgayDangky) VALUES(N'" + txtClassID.Text + "',N'" + txtMSSV.Text + "',N'" + dateTimePicker.Value.ToShortTimeString() + "')";
-            if (checkClass() < 4)
+            if (checkClass() <= 4)
             {
                 
-                if (!FindValue(txtIDMH.Text)) //Không tìm thấy môn học (Chưa đăng ký)
+                if (!FindSubject(txtIDMH.Text)) //Không tìm thấy môn học (Chưa đăng ký)
                 {
                     try
                     {
@@ -138,11 +137,11 @@ namespace QLSV
                 MessageBox.Show("Lớp đã đủ sỉ số");
         }
         //Kiểm tra lớp học đã đc đăng ký hay chưa
-        public bool FindValue(string text)
+        public bool FindSubject(string text)
         {
-            for (int i = 0; i < dgvListDK.Columns["MaMH"].Index; i++)
+            for (int i = 0; i < dgvListDK.Rows.Count; i++)
             {
-                if (dgvListDK.Rows[i].ToString() == txtIDMH.Text)
+                if (dgvListDK.Rows[i].Cells[0].Value != null && dgvListDK.Rows[i].Cells[0].Value.ToString() == text)
                 {
                     return true;
                 }
