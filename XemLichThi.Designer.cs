@@ -127,7 +127,6 @@
             this.dataGvLichThi.Name = "dataGvLichThi";
             this.dataGvLichThi.Size = new System.Drawing.Size(507, 245);
             this.dataGvLichThi.TabIndex = 4;
-            this.dataGvLichThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGvLichThi_CellContentClick);
             // 
             // btSearch
             // 

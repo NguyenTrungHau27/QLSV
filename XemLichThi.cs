@@ -46,8 +46,10 @@ namespace QLSV
         public List<Object> getData()
         {
             DangNhap.cn.Open();
-            string sql = "Select * From Thi WHERE MaSinhVien =" + DangNhap.mssv.ToString();
+            string sql = "dbo.XemLichThi";
             SqlCommand cmd = new SqlCommand(sql, DangNhap.cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@MSSV", DangNhap.mssv);
             SqlDataReader da = cmd.ExecuteReader();
             List<Object> list = new List<Object>();
             while (da.Read())
@@ -68,12 +70,18 @@ namespace QLSV
 
         private void btSearch_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGvLichThi_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            Check MH = new Check(DangNhap.mssv);
+            if (MH.CheckMaMH(txtSearch.Text) == false)
+            {
+                MessageBox.Show("Mã môn học chưa đúng", "Eror!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                return;
+            }
+            if (MH.TimMonHoc(txtSearch.Text) != null)
+            {
+                dataGvLichThi.DataSource = MH.TimMonHoc(txtSearch.Text);
+            }
+            else
+                MessageBox.Show("Môn học chưa đăng ký!", "Eror!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
     }
 }

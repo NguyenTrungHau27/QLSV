@@ -24,9 +24,7 @@ namespace QLSV
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string path = Directory.GetCurrentDirectory();
-            path = path.Substring(0, path.LastIndexOf('\\') - 3);
-            cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + @"App_data\QLSinhVien.mdf;Integrated Security=True;Connect Timeout=30");
+            cn = new SqlConnection(ConfigurationManager.ConnectionStrings["ketnoi"].ConnectionString);
         }
 
         private void btDong_Click(object sender, EventArgs e)

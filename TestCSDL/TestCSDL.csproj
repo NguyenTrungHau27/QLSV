@@ -69,6 +69,12 @@
     <Compile Include="UnitTestDKMH.cs">
       <SubType>Designer</SubType>
     </Compile>
+    <Compile Include="UnitTestXemLichThi.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="UnnitTestTimLichThi.cs">
+      <SubType>Designer</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

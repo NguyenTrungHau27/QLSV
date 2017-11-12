@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckMaMH.cs" />
     <Compile Include="ChucNang.cs">
       <SubType>Form</SubType>
     </Compile>

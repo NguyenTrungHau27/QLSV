@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="UnitTestLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestTimLichThi.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLSV.csproj">
