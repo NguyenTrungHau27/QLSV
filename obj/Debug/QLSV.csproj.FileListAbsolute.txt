@@ -44,8 +44,6 @@ C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
 C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.csproj.CoreCompileInputs.cache
 C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.exe
 C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.pdb
-C:\Users\StevenNguyen\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien.mdf
-C:\Users\StevenNguyen\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien_log.ldf
 C:\Users\Admin\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien.mdf
 C:\Users\Admin\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien_log.ldf
 C:\Users\ASUS\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien.mdf

@@ -7,7 +7,7 @@
     <Name>CSDL_QLSinhVien</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{5c3f2d17-6846-4b37-a6ff-d62986ca07ec}</ProjectGuid>
+    <ProjectGuid>{33eaa39a-8a74-48cf-b55d-55d5e3c18fb0}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>

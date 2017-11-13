@@ -125,7 +125,7 @@ SELECT @RC = 0,
        @MSSV = 1551010046,
        @PASS = 123456;
 
-EXECUTE @RC = [dbo].[TestDangNhap] @MSSV, @PASS;
+EXECUTE @RC = [dbo].[DangNhap] @MSSV, @PASS;
 
 
 </value>

@@ -44,6 +44,7 @@ namespace QLSV
             DangNhapTK dangnhap = new DangNhapTK();
             if (dangnhap.KTDangnhap(txtMSSV.Text, txtMatKhau.Text))
             {
+                mssv = txtMSSV.Text;
                 ChucNang dvsv = new ChucNang();
                 dvsv.Show();
             }

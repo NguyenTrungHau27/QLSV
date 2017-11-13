@@ -46,12 +46,6 @@ namespace TestCSDL
             KhongCoGiaTriNullTraVe = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.NotEmptyResultSetCondition();
             TraVeMSSV = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
             // 
-            // dbo_TestDangNhapTestData
-            // 
-            this.dbo_TestDangNhapTestData.PosttestAction = null;
-            this.dbo_TestDangNhapTestData.PretestAction = null;
-            this.dbo_TestDangNhapTestData.TestAction = dbo_TestDangNhapTest_TestAction;
-            // 
             // dbo_TestDangNhapTest_TestAction
             // 
             dbo_TestDangNhapTest_TestAction.Conditions.Add(KhongCoGiaTriNullTraVe);
@@ -73,6 +67,12 @@ namespace TestCSDL
             TraVeMSSV.NullExpected = false;
             TraVeMSSV.ResultSet = 1;
             TraVeMSSV.RowNumber = 1;
+            // 
+            // dbo_TestDangNhapTestData
+            // 
+            this.dbo_TestDangNhapTestData.PosttestAction = null;
+            this.dbo_TestDangNhapTestData.PretestAction = null;
+            this.dbo_TestDangNhapTestData.TestAction = dbo_TestDangNhapTest_TestAction;
         }
 
         #endregion

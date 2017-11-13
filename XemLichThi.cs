@@ -57,6 +57,7 @@ namespace QLSV
                 var pro = new
                 {
                     Mã_Lớp = da.GetString(0),
+                    Môn_Học = da.GetString(8),
                     Ngày_Thi = da.GetDateTime(2),
                     Lần_Thi = da.GetInt32(3),
                     Phòng_Thi = da.GetString(4),
@@ -71,6 +72,7 @@ namespace QLSV
         private void btSearch_Click(object sender, EventArgs e)
         {
             Check MH = new Check(DangNhap.mssv);
+            List<Object> list = new List<object>();
             if (MH.CheckMaMH(txtSearch.Text) == false)
             {
                 MessageBox.Show("Mã môn học chưa đúng", "Eror!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
@@ -78,7 +80,7 @@ namespace QLSV
             }
             if (MH.TimMonHoc(txtSearch.Text) != null)
             {
-                dataGvLichThi.DataSource = MH.TimMonHoc(txtSearch.Text);
+                dataGvLichThi.DataSource = MH.TimMonHoc(txtSearch.Text).ToList();
             }
             else
                 MessageBox.Show("Môn học chưa đăng ký!", "Eror!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);

@@ -45,7 +45,7 @@
             this.txtMSSV.Name = "txtMSSV";
             this.txtMSSV.Size = new System.Drawing.Size(140, 23);
             this.txtMSSV.TabIndex = 0;
-            this.txtMSSV.Text = "1551010046";
+            this.txtMSSV.Text = "1551010032";
             // 
             // label1
             // 

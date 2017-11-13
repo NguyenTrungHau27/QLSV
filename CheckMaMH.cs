@@ -10,7 +10,7 @@ namespace QLSV
     public class Check
     {
         private string MSSV;
-        private string MaMH;
+        
         public Check(string MSSV)
         {
             this.MSSV = MSSV;
@@ -26,31 +26,35 @@ namespace QLSV
 
         public List<Object> TimMonHoc(string MaMH)
         {
-            DangNhap.cn.Open();
+            
             string sql = "dbo.TimLichThi";
             SqlCommand cmd = new SqlCommand(sql, DangNhap.cn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@MSSV", MSSV);
+            cmd.Parameters.AddWithValue("@MSSV", this.MSSV);
             cmd.Parameters.AddWithValue("@MaMH", MaMH);
-            SqlDataReader da = cmd.ExecuteReader();
-            List<Object> list = new List<Object>();
-            if (da.Read())
+            using (DangNhap.cn)
             {
-                var pro = new
+                DangNhap.cn.Open();
+                SqlDataReader da = cmd.ExecuteReader();
+                List<Object> list = new List<Object>();
+                if (da.Read())
                 {
-                    Mã_Lớp = da.GetString(0),
-                    Môn_Học = da.GetString(8),
-                    Ngày_Thi = da.GetDateTime(2),
-                    Lần_Thi = da.GetInt32(3),
-                    Phòng_Thi = da.GetString(4),
-                    Ca_Thi = da.GetString(5)
-                };
-                list.Add(pro);
+                    var pro = new
+                    {
+                        Mã_Lớp = da.GetString(0),
+                        Môn_Học = da.GetString(8),
+                        Ngày_Thi = da.GetDateTime(2),
+                        Lần_Thi = da.GetInt32(3),
+                        Phòng_Thi = da.GetString(4),
+                        Ca_Thi = da.GetString(5)
+                    };
+                    list.Add(pro);
+                }
+                else
+                    list = null;
+                return list;
             }
-            else
-                list = null;
-            DangNhap.cn.Close();
-            return list;
+            
         }
 
     }

@@ -127,7 +127,7 @@ DECLARE @RC AS INT, @MSSV AS NVARCHAR (10);
 SELECT @RC = 0,
        @MSSV = 1551010046;
 
-EXECUTE @RC = [dbo].[TestXemThoiKhoaBieu] @MSSV;
+EXECUTE @RC = [dbo].[XemThoiKhoaBieu] @MSSV;
 
 
 

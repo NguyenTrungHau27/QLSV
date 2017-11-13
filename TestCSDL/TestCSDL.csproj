@@ -69,10 +69,10 @@
     <Compile Include="UnitTestDKMH.cs">
       <SubType>Designer</SubType>
     </Compile>
-    <Compile Include="UnitTestXemLichThi.cs">
+    <Compile Include="UnitTestTimLichThi.cs">
       <SubType>Designer</SubType>
     </Compile>
-    <Compile Include="UnnitTestTimLichThi.cs">
+    <Compile Include="UnitTestXemLichThi.cs">
       <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
@@ -88,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UnitTestDKMH.resx">
       <DependentUpon>UnitTestDKMH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTestTimLichThi.resx">
+      <DependentUpon>UnitTestTimLichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTestXemLichThi.resx">
+      <DependentUpon>UnitTestXemLichThi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup Condition="$(VisualStudioVersion) == '15.0'">

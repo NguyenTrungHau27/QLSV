@@ -7,7 +7,7 @@ using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestCSDL
+namespace TestCSDL
 {
     [TestClass()]
     public class UnitTestXemLichThi : SqlDatabaseTestClass
@@ -39,30 +39,34 @@ namespace UnitTestCSDL
         {
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction dbo_XemLichThiTest_TestAction;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UnitTestXemLichThi));
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition SoDong;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ChecksumCondition checksumCondition1;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition rowCountCondition1;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition scalarValueCondition1;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition scalarValueCondition2;
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition MSSV_hang1;
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition MSSV_hang2;
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition CheckPhong;
             this.dbo_XemLichThiTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             dbo_XemLichThiTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+            SoDong = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition();
             checksumCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ChecksumCondition();
-            rowCountCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition();
-            scalarValueCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
-            scalarValueCondition2 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
+            MSSV_hang1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
+            MSSV_hang2 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
+            CheckPhong = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ScalarValueCondition();
             // 
             // dbo_XemLichThiTest_TestAction
             // 
+            dbo_XemLichThiTest_TestAction.Conditions.Add(SoDong);
             dbo_XemLichThiTest_TestAction.Conditions.Add(checksumCondition1);
-            dbo_XemLichThiTest_TestAction.Conditions.Add(rowCountCondition1);
-            dbo_XemLichThiTest_TestAction.Conditions.Add(scalarValueCondition1);
-            dbo_XemLichThiTest_TestAction.Conditions.Add(scalarValueCondition2);
+            dbo_XemLichThiTest_TestAction.Conditions.Add(MSSV_hang1);
+            dbo_XemLichThiTest_TestAction.Conditions.Add(MSSV_hang2);
+            dbo_XemLichThiTest_TestAction.Conditions.Add(CheckPhong);
             resources.ApplyResources(dbo_XemLichThiTest_TestAction, "dbo_XemLichThiTest_TestAction");
             // 
-            // dbo_XemLichThiTestData
+            // SoDong
             // 
-            this.dbo_XemLichThiTestData.PosttestAction = null;
-            this.dbo_XemLichThiTestData.PretestAction = null;
-            this.dbo_XemLichThiTestData.TestAction = dbo_XemLichThiTest_TestAction;
+            SoDong.Enabled = true;
+            SoDong.Name = "SoDong";
+            SoDong.ResultSet = 1;
+            SoDong.RowCount = 2;
             // 
             // checksumCondition1
             // 
@@ -70,32 +74,41 @@ namespace UnitTestCSDL
             checksumCondition1.Enabled = true;
             checksumCondition1.Name = "checksumCondition1";
             // 
-            // rowCountCondition1
+            // dbo_XemLichThiTestData
             // 
-            rowCountCondition1.Enabled = true;
-            rowCountCondition1.Name = "rowCountCondition1";
-            rowCountCondition1.ResultSet = 1;
-            rowCountCondition1.RowCount = 2;
+            this.dbo_XemLichThiTestData.PosttestAction = null;
+            this.dbo_XemLichThiTestData.PretestAction = null;
+            this.dbo_XemLichThiTestData.TestAction = dbo_XemLichThiTest_TestAction;
             // 
-            // scalarValueCondition1
+            // MSSV_hang1
             // 
-            scalarValueCondition1.ColumnNumber = 2;
-            scalarValueCondition1.Enabled = true;
-            scalarValueCondition1.ExpectedValue = "1551010032";
-            scalarValueCondition1.Name = "scalarValueCondition1";
-            scalarValueCondition1.NullExpected = false;
-            scalarValueCondition1.ResultSet = 1;
-            scalarValueCondition1.RowNumber = 1;
+            MSSV_hang1.ColumnNumber = 2;
+            MSSV_hang1.Enabled = true;
+            MSSV_hang1.ExpectedValue = "1551010032";
+            MSSV_hang1.Name = "MSSV_hang1";
+            MSSV_hang1.NullExpected = false;
+            MSSV_hang1.ResultSet = 1;
+            MSSV_hang1.RowNumber = 1;
             // 
-            // scalarValueCondition2
+            // MSSV_hang2
             // 
-            scalarValueCondition2.ColumnNumber = 5;
-            scalarValueCondition2.Enabled = true;
-            scalarValueCondition2.ExpectedValue = "105";
-            scalarValueCondition2.Name = "scalarValueCondition2";
-            scalarValueCondition2.NullExpected = false;
-            scalarValueCondition2.ResultSet = 1;
-            scalarValueCondition2.RowNumber = 1;
+            MSSV_hang2.ColumnNumber = 2;
+            MSSV_hang2.Enabled = true;
+            MSSV_hang2.ExpectedValue = "1551010032";
+            MSSV_hang2.Name = "MSSV_hang2";
+            MSSV_hang2.NullExpected = false;
+            MSSV_hang2.ResultSet = 1;
+            MSSV_hang2.RowNumber = 2;
+            // 
+            // CheckPhong
+            // 
+            CheckPhong.ColumnNumber = 5;
+            CheckPhong.Enabled = true;
+            CheckPhong.ExpectedValue = "105";
+            CheckPhong.Name = "CheckPhong";
+            CheckPhong.NullExpected = false;
+            CheckPhong.ResultSet = 1;
+            CheckPhong.RowNumber = 1;
         }
 
         #endregion

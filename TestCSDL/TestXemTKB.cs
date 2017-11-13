@@ -52,12 +52,6 @@ namespace TestCSDL
             dbo_TestXemThoiKhoaBieuTest_TestAction.Conditions.Add(SoMonHocDaDK);
             resources.ApplyResources(dbo_TestXemThoiKhoaBieuTest_TestAction, "dbo_TestXemThoiKhoaBieuTest_TestAction");
             // 
-            // dbo_TestXemThoiKhoaBieuTestData
-            // 
-            this.dbo_TestXemThoiKhoaBieuTestData.PosttestAction = null;
-            this.dbo_TestXemThoiKhoaBieuTestData.PretestAction = null;
-            this.dbo_TestXemThoiKhoaBieuTestData.TestAction = dbo_TestXemThoiKhoaBieuTest_TestAction;
-            // 
             // XemTKB
             // 
             XemTKB.Checksum = "1838100339";
@@ -70,6 +64,12 @@ namespace TestCSDL
             SoMonHocDaDK.Name = "SoMonHocDaDK";
             SoMonHocDaDK.ResultSet = 1;
             SoMonHocDaDK.RowCount = 2;
+            // 
+            // dbo_TestXemThoiKhoaBieuTestData
+            // 
+            this.dbo_TestXemThoiKhoaBieuTestData.PosttestAction = null;
+            this.dbo_TestXemThoiKhoaBieuTestData.PretestAction = null;
+            this.dbo_TestXemThoiKhoaBieuTestData.TestAction = dbo_TestXemThoiKhoaBieuTest_TestAction;
         }
 
         #endregion

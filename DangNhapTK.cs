@@ -25,13 +25,14 @@ namespace QLSV
         }
         public bool KTDangnhap(string user, string pass)
         {
-            string sql = "SELECT ID FROM TaiKhoan WHERE ID = @User and Pass = @Pass";
+            string sql = "dbo.DangNhap";
             SqlCommand cmd = new SqlCommand(sql, DangNhap.cn);
-            cmd.CommandType = CommandType.Text;
+            
+            cmd.CommandType = CommandType.StoredProcedure;
             if (CheckUser(user))
             {
-                cmd.Parameters.Add(new SqlParameter("User", user));
-                cmd.Parameters.Add(new SqlParameter("Pass", pass));
+                cmd.Parameters.AddWithValue("@MSSV", user);
+                cmd.Parameters.AddWithValue("@PASS", pass);
                 DangNhap.mssv = (string)cmd.ExecuteScalar();
                 if (DangNhap.mssv != null)      
                     return true;

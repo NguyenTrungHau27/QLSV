@@ -148,7 +148,7 @@ DECLARE @RC AS INT, @classID AS NVARCHAR (10), @mssv AS NVARCHAR (10), @time AS 
 SELECT @RC = 0,
        @classID = 'TH01',
        @mssv = '1551010024',
-       @time = '12/2/2012';
+       @time = '2012-12-02';
 
 EXECUTE @RC = [dbo].[AddToDK] @classID, @mssv, @time;</value>
   </data>

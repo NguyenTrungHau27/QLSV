@@ -22,10 +22,5 @@ namespace UnitTest
             Assert.AreEqual(MH.CheckMaMH(""), false);
             Assert.AreEqual(MH.CheckMaMH(null), false);
         }
-        [TestMethod]
-        public void TestTimMonHoc()
-        {
-            //Assert.Equals(MH.CheckMaMH("000"), null);
-        }
     }
 }
