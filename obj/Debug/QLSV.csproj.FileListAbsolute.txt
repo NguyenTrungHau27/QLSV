@@ -46,12 +46,9 @@ C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.exe
 C:\Users\StevenNguyen\Desktop\QLSV\obj\Debug\QLSV.pdb
 C:\Users\Admin\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien.mdf
 C:\Users\Admin\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien_log.ldf
-C:\Users\ASUS\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien.mdf
-C:\Users\ASUS\Desktop\QLSV\bin\Debug\App_Data\QLSinhVien_log.ldf
 C:\Users\ASUS\Desktop\QLSV\bin\Debug\QLSV.exe.config
 C:\Users\ASUS\Desktop\QLSV\bin\Debug\QLSV.exe
 C:\Users\ASUS\Desktop\QLSV\bin\Debug\QLSV.pdb
-C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.ChucNang.resources
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.DangNhap.resources
 C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.DKMH.resources
@@ -80,3 +77,4 @@ C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.Welco
 C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.Xemdiem.resources
 C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.XemLichThi.resources
 C:\Users\KHANH HOANG\Desktop\New folder (3)\New folder\QLSV\obj\Debug\QLSV.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\QLSV\obj\Debug\QLSV.csprojResolveAssemblyReference.cache

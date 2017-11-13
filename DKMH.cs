@@ -17,9 +17,9 @@ namespace QLSV
         SqlCommand cmd = null;
         private int value = 0; //Biến đếm số lượng sinh viên đã đăng ký (tối đa là 4)
         //Query cho dgvDK (Danh sách những môn học có thể đăng ký)
-        string sql = "SELECT Lop.MaLop , Lop.MaMH, MonHoc.TenMH, GiangVien.HoGV + ' ' + GiangVien.TenGV AS N'Giảng viên giảng dạy' FROM Lop, MonHoc, GiangVien WHERE Lop.MaMH = MonHoc.MaMH AND Lop.MaGV = GiangVien.MaGV";
+        string sql1 = "EXEC SQL1";
         //Query cho dgvListDK (Danh sách môn học đã được đăng ký)
-        string sql1 = "SELECT MonHoc.* FROM MonHoc, Lop WHERE MonHoc.MaMH = Lop.MaMH AND Lop.MaLop IN(SELECT DangKy.MaLop FROM Lop, DangKy WHERE Lop.MaLop = DangKy.MaLop AND DangKy.MaSinhVien = '"+ DangNhap.mssv +"')";
+        string sql2 = "EXEC SQL2 '"+ DangNhap.mssv+ "'";
         public DKMH()
         {
             InitializeComponent();
@@ -34,9 +34,9 @@ namespace QLSV
             //Lấy ảnh đại diện của sinh viên
             getAvatar();
             //Lấy danh sách môn học
-            dgvDK.DataSource = GetData(sql);
+            dgvDK.DataSource = GetData(sql1);
             //Lấy danh sách môn học đã đăng ký
-            dgvListDK.DataSource = GetData(sql1);
+            dgvListDK.DataSource = GetData(sql2);
         }
         private void getAvatar()
         {
@@ -101,8 +101,8 @@ namespace QLSV
         {
             //Lấy họ và tên của sinh viên
             txtMSSV.Text = DangNhap.mssv;
-            string sql = "SELECT [Ho] + ' ' + [Ten] FROM SinhVien WHERE MaSinhVien = '" + txtMSSV.Text + "'";
-            cmd = new SqlCommand(sql, DangNhap.cn);
+            string s = "EXEC GetInfo '" + txtMSSV.Text + "'";
+            cmd = new SqlCommand(s, DangNhap.cn);
             txtNameSV.Text = cmd.ExecuteScalar().ToString();
         }
 
@@ -110,7 +110,7 @@ namespace QLSV
         {
 
             //Query cho thêm vào bảng "Đăng Ký"
-            string dk = "INSERT INTO DangKy(MaLop,MaSinhVien,NgayDangky) VALUES(N'" + txtClassID.Text + "',N'" + txtMSSV.Text + "',N'" + dateTimePicker.Value.ToShortTimeString() + "')";
+            string dk = "EXEC AddToDK '" + txtClassID.Text + "','" + txtMSSV.Text + "','" + dateTimePicker.Value.ToShortDateString() + "'";
             if (checkClass() <= 4)
             {
                 
@@ -122,7 +122,7 @@ namespace QLSV
                         cmd = new SqlCommand(dk, DangNhap.cn);
                         cmd.ExecuteNonQuery();
                         //Cập nhật lại danh sách môn học đã đăng ký thành công
-                        dgvListDK.DataSource = GetData(sql1);
+                        dgvListDK.DataSource = GetData(sql2);
                     }
                     catch (SqlException)
                     {
@@ -151,7 +151,7 @@ namespace QLSV
         //Kiểm tra sỉ số lớp
         public int checkClass()
         {
-            string count = "SELECT COUNT(MaLop) FROM DangKy WHERE MaLop = N'" + txtClassID.Text + "'";
+            string count = "EXEC CheckClass '" + txtClassID.Text + "'";
             //Connect();
             cmd = new SqlCommand(count, DangNhap.cn);
             return value = Int32.Parse(cmd.ExecuteScalar().ToString());
@@ -163,11 +163,11 @@ namespace QLSV
             {
                 //Hủy đăng ký 1 môn học
                 string c = dgvListDK.CurrentRow.Cells["MaMH"].Value.ToString();
-                string delClass = "DELETE FROM DangKy WHERE MaSinhVien = '" + DangNhap.mssv + "' AND Malop IN(SELECT MaLop FROM Lop WHERE MaMH ='" + c + "')";
+                string delClass = "EXEC DeleteFromDK '" + DangNhap.mssv + "','"+ c + "'";
                 cmd = new SqlCommand(delClass, DangNhap.cn);
                 cmd.ExecuteNonQuery();
                 //Cập nhật lại danh sách môn học đã đăng ký thành công
-                dgvListDK.DataSource = GetData(sql1);
+                dgvListDK.DataSource = GetData(sql2);
             }
             catch (Exception)
             {
